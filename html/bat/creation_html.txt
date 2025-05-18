@@ -1,0 +1,24 @@
+@echo off
+:: Cria a pasta do projeto
+mkdir html
+cd html
+
+:: Cria os arquivos HTML principais
+echo. > index.html
+echo. > navbar.html
+echo. > sidebar.html
+echo. > footer.html
+
+:: Cria as pastas css e js
+mkdir css
+mkdir js
+
+:: Cria os arquivos CSS
+echo. > css\style.css
+echo. > css\dark.css
+
+:: Cria o arquivo JS
+echo. > js\script.js
+
+echo Estrutura criada com sucesso!
+pause

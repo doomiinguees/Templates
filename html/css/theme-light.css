@@ -1,0 +1,10 @@
+:root {
+    --background: #f9f9f9;
+    --text: #222;
+
+    --primary: #007bff;
+    --on-primary: #fff;
+
+    --sidebar-bg: #e9ecef;
+    --primary-hover: #0056b3;
+}
