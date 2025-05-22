@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplos de Elementos HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/config.css" />
+    <link id="theme-style" rel="stylesheet" href="css/theme-light.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div class="layout">
+        <div id="sidebar"></div>
+
+        <main>
+            <h1>Exemplo de Elementos HTML</h1>
+            <section>
+                <h2>Texto e Estrutura</h2>
+                <p>Este é um parágrafo com algum <strong>texto em negrito</strong>, <em>itálico</em> e um <a
+                        href="#">link</a>.</p>
+                <blockquote>Citação de exemplo.</blockquote>
+                <pre>
+function ola() {
+  console.log("Olá mundo!");
+}
+                </pre>
+                <code>&lt;div&gt;Código em linha&lt;/div&gt;</code>
+            </section>
+
+            <!-- <section>
+            <h2>Imagens e Multimédia</h2>
+            <img src="https://via.placeholder.com/150" alt="Imagem de exemplo">
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </section> -->
+
+            <section>
+                <h2>Listas</h2>
+                <ul>
+                    <li>Item de lista não ordenada</li>
+                </ul>
+                <ol>
+                    <li>Item de lista ordenada</li>
+                </ol>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Linguagem de marcação para a Web</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h2>Tabelas</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ana</td>
+                            <td>30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Formulários</h2>
+                <form action="#">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="msg">Mensagem:</label><br>
+                    <textarea id="msg" name="msg"></textarea><br><br>
+
+                    <label>
+                        <input type="checkbox" name="aceito"> Aceito os termos
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="sexo" value="M"> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" value="F"> Feminino
+                    </label><br><br>
+
+                    <select name="pais">
+                        <option value="pt">Portugal</option>
+                        <option value="br">Brasil</option>
+                    </select><br><br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Formulários e Controles</h2>
+                <form action="#">
+                    <label for="text">Texto:</label>
+                    <input type="text" id="text" name="text"><br><br>
+
+                    <label for="password">Palavra-passe:</label>
+                    <input type="password" id="password" name="password"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="url">URL:</label>
+                    <input type="url" id="url" name="url"><br><br>
+
+                    <label for="number">Número:</label>
+                    <input type="number" id="number" name="number"><br><br>
+
+                    <label for="range">Intervalo:</label>
+                    <div class="row">
+                        <div class="col-3">
+                            <input type="range" id="range" name="range" min="0" max="100"><br><br>
+                        </div>
+                    </div>
+
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" name="date"><br><br>
+
+                    <label for="time">Hora:</label>
+                    <input type="time" id="time" name="time"><br><br>
+
+                    <label for="color">Cor:</label>
+                    <input type="color" id="color" name="color"><br><br>
+
+                    <label for="file">Ficheiro:</label>
+                    <input type="file" id="file" name="file"><br><br>
+
+                    <label for="select">Selecionar:</label>
+                    <select id="select" name="select">
+                        <option value="1">Opção 1</option>
+                        <option value="2">Opção 2</option>
+                    </select><br><br>
+
+                    <label for="textarea">Mensagem:</label><br>
+                    <textarea id="textarea" name="textarea" rows="4" cols="30"></textarea><br><br>
+
+                    <div class="radio-group">
+                        <label><input type="radio" name="sexo" value="M"> Masculino</label>
+                        <label><input type="radio" name="sexo" value="F"> Feminino</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="aceito"> Aceito os termos</label>
+                        <label><input type="checkbox" name="newsletter"> Quero receber newsletter</label>
+                    </div>
+
+                    <button type="submit">Submeter</button>
+                    <button type="reset">Repor</button>
+                    <button type="button" onclick="alert('Botão clicado!')">Clique aqui</button>
+                </form>
+            </section>
+
+            <!-- <section>
+                <h2>Outros</h2>
+                <details>
+                    <summary>Mais informações</summary>
+                    Aqui está algum conteúdo oculto.
+                </details>
+                <progress value="70" max="100"></progress>
+                <meter value="0.6">60%</meter>
+                <hr>
+                <abbr title="HyperText Markup Language">HTML</abbr>
+                <mark>Texto marcado</mark>
+                <time datetime="2025-05-18">18 de Maio de 2025</time>
+            </section> -->
+
+            <div class="container">
+                <!-- Linha 1: 1 card (col-12) -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">Card 1.1</div>
+                            <div class="card-body">Conteúdo do card 1.1</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 2: 2 cards (col-6) -->
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">Card 2.1</div>
+                            <div class="card-body">Conteúdo do card 2.1</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">Card 2.2</div>
+                            <div class="card-body">Conteúdo do card 2.2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 3: 3 cards (col-4) -->
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">Card 3.1</div>
+                            <div class="card-body">Conteúdo do card 3.1</div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">Card 3.2</div>
+                            <div class="card-body">Conteúdo do card 3.2</div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">Card 3.3</div>
+                            <div class="card-body">Conteúdo do card 3.3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 4: 4 cards (col-3) -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">Card 4.1</div>
+                            <div class="card-body">Conteúdo do card 4.1</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">Card 4.2</div>
+                            <div class="card-body">Conteúdo do card 4.2</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">Card 4.3</div>
+                            <div class="card-body">Conteúdo do card 4.3</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">Card 4.4</div>
+                            <div class="card-body">Conteúdo do card 4.4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 5: 5 cards (col-2 e 10%) -->
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 5.1</div>
+                            <div class="card-body">Conteúdo do card 5.1</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 5.2</div>
+                            <div class="card-body">Conteúdo do card 5.2</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 5.3</div>
+                            <div class="card-body">Conteúdo do card 5.3</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 5.4</div>
+                            <div class="card-body">Conteúdo do card 5.4</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 5.5</div>
+                            <div class="card-body">Conteúdo do card 5.5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 6: 6 cards (col-2) -->
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 6.1</div>
+                            <div class="card-body">Conteúdo do card 6.1</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 6.2</div>
+                            <div class="card-body">Conteúdo do card 6.2</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 6.3</div>
+                            <div class="card-body">Conteúdo do card 6.3</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 6.4</div>
+                            <div class="card-body">Conteúdo do card 6.4</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 6.5</div>
+                            <div class="card-body">Conteúdo do card 6.5</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 6.6</div>
+                            <div class="card-body">Conteúdo do card 6.6</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 7: 7 cards (col-1 com exceção de um col-5 para completar 100%) -->
+                <div class="row">
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 7.1</div>
+                            <div class="card-body">Conteúdo do card 7.1</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 7.2</div>
+                            <div class="card-body">Conteúdo do card 7.2</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 7.3</div>
+                            <div class="card-body">Conteúdo do card 7.3</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 7.4</div>
+                            <div class="card-body">Conteúdo do card 7.4</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 7.5</div>
+                            <div class="card-body">Conteúdo do card 7.5</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 7.6</div>
+                            <div class="card-body">Conteúdo do card 7.6</div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="card">
+                            <div class="card-header">Card 7.7</div>
+                            <div class="card-body">Conteúdo do card 7.7</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 8: 8 cards (col-1 com exceção de um col-4 para completar 100%) -->
+                <div class="row">
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 8.1</div>
+                            <div class="card-body">Conteúdo do card 8.1</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 8.2</div>
+                            <div class="card-body">Conteúdo do card 8.2</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 8.3</div>
+                            <div class="card-body">Conteúdo do card 8.3</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 8.4</div>
+                            <div class="card-body">Conteúdo do card 8.4</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 8.5</div>
+                            <div class="card-body">Conteúdo do card 8.5</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 8.6</div>
+                            <div class="card-body">Conteúdo do card 8.6</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 8.7</div>
+                            <div class="card-body">Conteúdo do card 8.7</div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">Card 8.8</div>
+                            <div class="card-body">Conteúdo do card 8.8</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 9: 9 cards (col-1 com exceção de um col-3 para completar 100%) -->
+                <div class="row">
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 9.1</div>
+                            <div class="card-body">Conteúdo do card 9.1</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 9.2</div>
+                            <div class="card-body">Conteúdo do card 9.2</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 9.3</div>
+                            <div class="card-body">Conteúdo do card 9.3</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 9.4</div>
+                            <div class="card-body">Conteúdo do card 9.4</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 9.5</div>
+                            <div class="card-body">Conteúdo do card 9.5</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 9.6</div>
+                            <div class="card-body">Conteúdo do card 9.6</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 9.7</div>
+                            <div class="card-body">Conteúdo do card 9.7</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 9.8</div>
+                            <div class="card-body">Conteúdo do card 9.8</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">Card 9.9</div>
+                            <div class="card-body">Conteúdo do card 9.9</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 10: 10 cards (col-1 com exceção de um col-2 para completar 100%) -->
+                <div class="row">
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 10.1</div>
+                            <div class="card-body">Conteúdo do card 10.1</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 10.2</div>
+                            <div class="card-body">Conteúdo do card 10.2</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 10.3</div>
+                            <div class="card-body">Conteúdo do card 10.3</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 10.4</div>
+                            <div class="card-body">Conteúdo do card 10.4</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 10.5</div>
+                            <div class="card-body">Conteúdo do card 10.5</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 10.6</div>
+                            <div class="card-body">Conteúdo do card 10.6</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 10.7</div>
+                            <div class="card-body">Conteúdo do card 10.7</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 10.8</div>
+                            <div class="card-body">Conteúdo do card 10.8</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 10.9</div>
+                            <div class="card-body">Conteúdo do card 10.9</div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">Card 10.10</div>
+                            <div class="card-body">Conteúdo do card 10.10</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 11: 11 cards (col-1 com exceção de um col-1 para completar 100%) -->
+                <div class="row">
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.1</div>
+                            <div class="card-body">Conteúdo do card 11.1</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.2</div>
+                            <div class="card-body">Conteúdo do card 11.2</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.3</div>
+                            <div class="card-body">Conteúdo do card 11.3</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.4</div>
+                            <div class="card-body">Conteúdo do card 11.4</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.5</div>
+                            <div class="card-body">Conteúdo do card 11.5</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.6</div>
+                            <div class="card-body">Conteúdo do card 11.6</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.7</div>
+                            <div class="card-body">Conteúdo do card 11.7</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.8</div>
+                            <div class="card-body">Conteúdo do card 11.8</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.9</div>
+                            <div class="card-body">Conteúdo do card 11.9</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.10</div>
+                            <div class="card-body">Conteúdo do card 11.10</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 11.11</div>
+                            <div class="card-body">Conteúdo do card 11.11</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 12: 12 cards (col-1) -->
+                <div class="row">
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.1</div>
+                            <div class="card-body">Conteúdo do card 12.1</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.2</div>
+                            <div class="card-body">Conteúdo do card 12.2</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.3</div>
+                            <div class="card-body">Conteúdo do card 12.3</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.4</div>
+                            <div class="card-body">Conteúdo do card 12.4</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.5</div>
+                            <div class="card-body">Conteúdo do card 12.5</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.6</div>
+                            <div class="card-body">Conteúdo do card 12.6</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.7</div>
+                            <div class="card-body">Conteúdo do card 12.7</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.8</div>
+                            <div class="card-body">Conteúdo do card 12.8</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.9</div>
+                            <div class="card-body">Conteúdo do card 12.9</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.10</div>
+                            <div class="card-body">Conteúdo do card 12.10</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.11</div>
+                            <div class="card-body">Conteúdo do card 12.11</div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card">
+                            <div class="card-header">Card 12.12</div>
+                            <div class="card-body">Conteúdo do card 12.12</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-grid">
+                <div class="col">
+                    <h4>Normal</h4>
+                    <button class="btn">Default</button>
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-light">Light</button>
+                    <button class="btn btn-dark">Dark</button>
+                </div>
+            
+                <div class="col">
+                    <h4>Large <code>.btn-lg</code></h4>
+                    <button class="btn btn-lg">Default</button>
+                    <button class="btn btn-primary btn-lg">Primary</button>
+                    <button class="btn btn-secondary btn-lg">Secondary</button>
+                    <button class="btn btn-success btn-lg">Success</button>
+                    <button class="btn btn-info btn-lg">Info</button>
+                    <button class="btn btn-danger btn-lg">Danger</button>
+                    <button class="btn btn-warning btn-lg">Warning</button>
+                    <button class="btn btn-light btn-lg">Light</button>
+                    <button class="btn btn-dark btn-lg">Dark</button>
+                </div>
+            
+                <div class="col">
+                    <h4>Small <code>.btn-sm</code></h4>
+                    <button class="btn btn-sm">Default</button>
+                    <button class="btn btn-primary btn-sm">Primary</button>
+                    <button class="btn btn-secondary btn-sm">Secondary</button>
+                    <button class="btn btn-success btn-sm">Success</button>
+                    <button class="btn btn-info btn-sm">Info</button>
+                    <button class="btn btn-danger btn-sm">Danger</button>
+                    <button class="btn btn-warning btn-sm">Warning</button>
+                    <button class="btn btn-light btn-sm">Light</button>
+                    <button class="btn btn-dark btn-sm">Dark</button>
+                </div>
+            
+                <div class="col">
+                    <h4>Extra Small <code>.btn-xs</code></h4>
+                    <button class="btn btn-xs">Default</button>
+                    <button class="btn btn-primary btn-xs">Primary</button>
+                    <button class="btn btn-secondary btn-xs">Secondary</button>
+                    <button class="btn btn-success btn-xs">Success</button>
+                    <button class="btn btn-info btn-xs">Info</button>
+                    <button class="btn btn-danger btn-xs">Danger</button>
+                    <button class="btn btn-warning btn-xs">Warning</button>
+                    <button class="btn btn-light btn-xs">Light</button>
+                    <button class="btn btn-dark btn-xs">Dark</button>
+                </div>
+            
+                <div class="col">
+                    <h4>Flat <code>.btn-flat</code></h4>
+                    <button class="btn btn-flat">Default</button>
+                    <button class="btn btn-primary btn-flat">Primary</button>
+                    <button class="btn btn-secondary btn-flat">Secondary</button>
+                    <button class="btn btn-success btn-flat">Success</button>
+                    <button class="btn btn-info btn-flat">Info</button>
+                    <button class="btn btn-danger btn-flat">Danger</button>
+                    <button class="btn btn-warning btn-flat">Warning</button>
+                    <button class="btn btn-light btn-flat">Light</button>
+                    <button class="btn btn-dark btn-flat">Dark</button>
+                </div>
+            
+                <div class="col">
+                    <h4>Disabled <code>.disabled</code></h4>
+                    <button class="btn" disabled>Default</button>
+                    <button class="btn btn-primary" disabled>Primary</button>
+                    <button class="btn btn-secondary" disabled>Secondary</button>
+                    <button class="btn btn-success" disabled>Success</button>
+                    <button class="btn btn-info" disabled>Info</button>
+                    <button class="btn btn-danger" disabled>Danger</button>
+                    <button class="btn btn-warning" disabled>Warning</button>
+                    <button class="btn btn-light" disabled>Light</button>
+                    <button class="btn btn-dark" disabled>Dark</button>
+                </div>
+            </div>
+              
+        </main>
+    </div>
+    <div id="footer"></div>
+
+</body>
+
+</html>
