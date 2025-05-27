@@ -201,7 +201,6 @@ main {
 .card {
     border: 1px solid #ccc;
     border-radius: 6px;
-    background: var(--light);
 }
 
 .card-header {
@@ -215,6 +214,7 @@ main {
 
 .card-body {
     padding: 1rem;
+    background: var(--card-bg) !important;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
@@ -266,7 +266,7 @@ form .radio-group {
 
 .btn {
     border: 1px solid #ccc;
-    background-color: var(--light);
+    background-color: unset;
     color: var(--text);
     padding: 0.4rem 0.8rem;
     font-size: 1rem;

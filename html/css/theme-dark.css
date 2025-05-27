@@ -1,7 +1,7 @@
 :root {
-    --background: #121212;
+    --background: #191919;
     --text: #ffffff;
-    --sidebar-bg: #cccccc;
+    --sidebar-bg: #121212;
 
     --primary: #007bff;
     --secondary: #6c757d;
@@ -27,4 +27,5 @@
     --footer-text: #ffffff;
     --sidebar-text: #ffffff;
     --sidebar-icon: #ffffff;
+    --card-bg: #ffffff;
 }
